@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramesh's  Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: navy;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .portfolio {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+        .mySlides {
+            display: none;
+        }
+        .mySlides img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .button-container a {
+            background-color: navy;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .about {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contact {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contact a {
+            background-color: navy;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+        footer {
+           
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo3.png" alt="Ramesh's Logo">
+            <h1>Ramesh's Edits</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="img1.png" alt="Portfolio Image 1">
+                </div>
+                <div class="mySlides">
+                    <img src="img2.png" alt="Portfolio Image 2">
+                </div>
+                <div class="mySlides">
+                    <img src="img3.png" alt="Portfolio Image 3">
+                </div>
+                <div class="mySlides">
+                    <img src="img4.jpg" alt="Portfolio Image 4">
+                </div>
+                <div class="mySlides">
+                    <img src="img5.png" alt="Portfolio Image 5">
+                </div>
+            </div>
+            <div class="button-container">
+                <a href="https://drive.google.com/drive/folders/1VD7uIt84kKHadRk5mQHVCJwFJdVQFZgU" target="_blank">More Works</a>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>"I'm Ramesh, specializing in creating custom thumbnails for YouTubers using Photoshop over the past few months, focusing on designs that captivate and engage audiences effectively. If you're interested in upgrading your visuals or need any design work, contact me below."</p>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <a href="tel:+918688670803">Call</a>
+            <a href="https://wa.me/+918688670803" target="_blank">WhatsApp</a>
+            <a href="https://www.instagram.com/ramesh_editss?igsh=eWZqenk1MDEzOGhx" target="_blank">Instagram</a>
+            <a href="mailto:rameshff189@gmail.com">Email </a>
+        </section>
+    </div>
+
+    
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+</html>
